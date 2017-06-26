@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("/img/bg.jpg") no-repeat;
+    background-position: top center;
+    margin: 50px auto;
+    font-family:"SourceSans", sans-serif;
+    width: 600px;
+}
+main {
+    z-index: 100;
+    background-color: #fff;
+}
+
+header {
+    background-color: #999999;
+    height: 55px;
+}
+
+header h1 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+header a {
+    font-family: "FontAwesome", sans-serif;
+    font-size: 20px;
+    color: #7d7d7d;
+    text-decoration: none;
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.toolbar {
+    height: 90px;
+    background-color: #fff;
+    font-size: 0;
+}
+
+.toolbar > ul {
+    list-style-type: none;
+}
+
+.toolbar ul > li {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 19px 0;
+
+}
+
+.toolbar > ul > li a {
+    text-decoration: none;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 10px;
+    color: #000;
+}
+
+.toolbar > ul > li > a > span {
+    font-family: "FontAwesome", sans-serif;
+    font-size: 34px;
+    color: #999999;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.toolbar ul > ul {
+    display: inline-block;
+    margin: 5px 10px;
+
+}
+
+.toolbar ul > ul li {
+    display: block;
+    margin: 0;
+    text-align: center;
+
+}
+
+.toolbar ul > ul li a {
+    display: inline-block;
+    font-size: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.toolbar ul > ul li:nth-child(2) a {
+    line-height: 24px;
+
+}
+
+.toolbar ul > ul li a span {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 15px;
+    font-family: "FontAwesome", sans-serif;
+    color: #999999;
+    float: left;
+}
+
+.toolbar ul li.before::before {
+    content: '';
+    background-image: url('/img/stripe.png');
+    width: 2px;
+    height: 82px;
+    position: absolute;
+    margin: -7px -46px;
+}
+
+nav {
+    background-color: #666;
+    font-size: 0;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 4px 49px 4px;
+    background-color: #666;
+    color: #fff;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a.active {
+    color: #666;
+    background-color: #ffffff;
+    border-top: 1px solid #999;
+    padding: 4px 49px 4px;
+}
+
+nav ul li a:hover {
+    padding: 4px 49px 4px;
+    text-decoration: underline;
+}
+
+nav ul li:first-child a {
+    padding: 4px 49px 4px 47px;
+}
+
+footer {
+    height: 62px;
+    border-top: 1px solid #d2d2d2;
+    margin-top: 20px;
+}
+
+footer .button {
+    line-height: 62px;
+    font-family: "SourceSans";
+    font-size: 14px;
+    color: #ffffff;
+    padding: 8px 16px;
+    background-color: #cccccc;
+    text-decoration: none;
+}
+
+.button.blue {
+    margin-left: 16px;
+    background-color: #39c2d7;
+}
+
+.button.blue::before {
+    content: '\f0c6';
+    font-family: "FontAwesome";
+    margin-right: 20px;
+}
+
+.button.grey {
+    background-color: #999999;
+    margin-left: 257px;
+}
+
+.button.green {
+    background-color: #a3c644;
+}
+
+/* FORM CSS
+ */
+
+#main-form {
+    font-size: 0;
+    position: relative;
+}
+
+#main-form > div {
+    min-height: 500px;
+}
+
+.element {
+    display: block;
+    margin: 20px 0;
+}
+
+label, .label {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "SourceSans", sans-serif;
+    cursor: pointer;
+}
+
+input, select {
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+input:focus {
+    background-color: #f1f1f1;
+}
+
+input, select {
+    height: 33px;
+}
+
+input[type="text"]::-moz-placeholder {
+    color: #666;
+}
+
+.wrap {
+    margin: 10px 0;
+}
+
+.contractID #contractID {
+    width: 167px;
+    margin-right: 40px;
+    padding-left: 8px;
+}
+
+.contractID #pin {
+    margin-left: 13px;
+    width: 168px;
+    padding-left: 8px;
+}
+
+.contactor #contactor {
+    width: 420px;
+    padding-left: 7px;
+}
+
+.legalStructure #legalStructure {
+    width: 420px;
+    padding-left: 7px;
+}
+
+.subjectOfContract #subjectOfContract {
+    width: 420px;
+    padding-left: 7px;
+}
+
+.residence .radio div,
+.residence .checkbox div {
+    display: flex;
+    align-items: center;
+}
+
+.residence .radio div input[type="radio"],
+.residence .checkbox div input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.residence .checkbox {
+    margin-left: 125px;
+}
+
+.legalBasis #legalBasis {
+    width: 429px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.left {
+    vertical-align: top;
+    width: 146px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.termsOfContract .startDate,
+.termsOfContract .specifiedByAnnex {
+    display: flex;
+    align-items: center;
+}
+
+.termsOfContract input[type="text"] {
+    width: 125px;
+}
+
+.termsOfContract input[type="radio"] {
+    margin-right: 10px;
+}
+
+.termsOfContract label {
+    margin-right: 10px;
+}
+
+.termsOfContract .endDate {
+    float: right;
+    margin-right: 15px;
+}
+
+.amount #amount {
+    width: 219px;
+    margin-right: 17px;
+}
+
+.amount #currency {
+    margin-left: 10px;
+    width: 127px;
+}
+
+.payment #payment {
+    width: 427px;
+}
+
+.comments #comments {
+    resize: none;
+    height: 32px;
+    width: 425px;
+    border: 1px solid #999;
+}
+
+input[type="text"]::-moz-placeholder {
+    color: #999;
+}
+
+#attachments .attachments div,
+#annexes .annexes div {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#attachments .attachments div:nth-child(odd),
+#annexes .annexes div:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+#attachments .attachments div input[type="checkbox"],
+#annexes .annexes div input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+#attachments .attachments div label,
+#annexes .annexes div label {
+    margin-left: 10px;
+    font-weight: 100;
+}
+
+#attachments .attachments div:last-child,
+#annexes .annexes div:last-child {
+    margin-bottom: 170px;
+}
+
+#attachments .attachments,
+#annexes .annexes {
+    border: 2px solid #d2d2d2;
+    margin: 16px;
+}
+
+.draggable, .draggable2 {
+    width: auto;
+    height: 140px;
+    border: 2px dashed #39c2d7;
+    margin: 16px;
+}
+
+.draggable p,
+.draggable2 p {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+#approvers .approver {
+    width: 233px;
+}
+
+#approvers div label {
+    vertical-align: middle;
+    margin-left: 16px;
+}
+
+#approvers div .date {
+    width: 168px;
+}
+
+#approvers div {
+    margin: 8px 0;
+}
+
+#approvers .inline input {
+    padding-left: 8px;
+}
+
+#attachments,
+#annexes,
+#approvers {
+    display: none;
+}
